@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "54022949-2428-456b-82a1-f1c8957282df",
+		"name": "DesafioCoderockr",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cria investimento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"investimento\": \"Z\",\r\n\t\"proprietario\":\"mateus\",\r\n\t\"dataCriacao\":\"20/11/2022\",\r\n\t\"valorInicial\":\"2000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/cria-investimento",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"cria-investimento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista investimentos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"proprietario\":\"mateus\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/lista-investimentos/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"lista-investimentos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Visualiza investimento",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"investimento\": \"X\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/visualiza-investimento",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"visualiza-investimento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retira investimento",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"investimento\": \"X\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/retira-investimento",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"retira-investimento"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://",
+			"type": "default"
+		}
+	]
+}

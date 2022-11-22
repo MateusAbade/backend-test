@@ -1,0 +1,16 @@
+{
+  "name": "desafio-coderockr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "servico.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mateus Abade",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-schedule": "^2.1.0",
+    "pg": "^8.8.0"
+  }
+}
